@@ -22,4 +22,4 @@ async def hello(ctx):
     await ctx.send(greetings_list[random_no])
 
 token = os.getenv('DISCORD_TOKEN')
-bot.run('MTMwNTA4MzI5NzY2MzAyOTI5OQ.G_tBK5.DLWbHzXerlR8p2tBefCvZr5_ZY11cffc2BCa8M')
+bot.run(token)
