@@ -13,6 +13,16 @@ class MyBot(commands.Bot):
 bot = MyBot(command_prefix='$', intents=discord.Intents.all())
 
 @bot.command()
+async def purge(ctx, limit: str):
+    if ctx.author.guild_permissions.administrator:
+        if limit == 'all':
+            await ctx.channel.purge()
+        else:
+            await ctx.channel.purge(limit=int(limit))
+    else:
+        await ctx.send("You do not have the permission to use this command")
+
+@bot.command()
 async def hello(ctx):
 
     greetings_list = ["Hello!", "Howdy!", "How is it going? :D", "Hi there!", "Hey!", "hola", "Namaste"]
