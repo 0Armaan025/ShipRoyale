@@ -25,7 +25,7 @@
         {"stat_name": "length", "stat_value": 200},
         {
             "stat_name": "Price",
-            "stat_value": 9999
+            "stat_value": 2000
         },
         {
             "stat_name": "HP",
@@ -78,7 +78,7 @@
         {"stat_name": "Crew", "stat_value": 820},
         {"stat_name": "Passenger", "stat_value": 0},
         {"stat_name": "Capacity", "stat_value": 800},
-        {"stat_name": "Price", "stat_value": 5000},
+        {"stat_name": "Price", "stat_value": 10000},
         {"stat_name": "length", "stat_value": 200},
         {"stat_name": "HP", "stat_value": 120}
     ],
@@ -105,7 +105,7 @@
         {"stat_name": "Crew", "stat_value": 450},
         {"stat_name": "Passenger", "stat_value": 0},
         {"stat_name": "Capacity", "stat_value": 500},
-        {"stat_name": "Price", "stat_value": 7000},
+        {"stat_name": "Price", "stat_value": 30000},
         {"stat_name": "HP", "stat_value": 130}
     ],
     "ship_weapons": [
@@ -159,7 +159,7 @@
         {"stat_name": "Crew", "stat_value": 1100},
         {"stat_name": "Passenger", "stat_value": 2000},
         {"stat_name": "Capacity", "stat_value": 3100},
-        {"stat_name": "Price", "stat_value": 12000},
+        {"stat_name": "Price", "stat_value": 40000},
         {"stat_name": "length", "stat_value": 200},
         {"stat_name": "HP", "stat_value": 200}
     ],
@@ -185,7 +185,7 @@
       { "stat_name": "Crew", "stat_value": 4500 },
       { "stat_name": "Aircraft Capacity", "stat_value": 90 },
       { "stat_name": "Length", "stat_value": 342 },
-      { "stat_name": "Price", "stat_value": 45000 },
+      { "stat_name": "Price", "stat_value": 80000 },
       { "stat_name": "HP", "stat_value": 1000 }
     ],
     "ship_weapons": [
@@ -239,7 +239,7 @@
       { "stat_name": "Crew", "stat_value": 2700 },
       { "stat_name": "Firepower", "stat_value": 150 },
       { "stat_name": "Length", "stat_value": 270 },
-      { "stat_name": "Price", "stat_value": 40000 },
+      { "stat_name": "Price", "stat_value": 50000 },
       { "stat_name": "HP", "stat_value": 1100 }
     ],
     "ship_weapons": [
@@ -266,7 +266,7 @@
       { "stat_name": "Crew", "stat_value": 1500 },
       { "stat_name": "Firepower", "stat_value": 140 },
       { "stat_name": "Length", "stat_value": 208 },
-      { "stat_name": "Price", "stat_value": 20000 },
+      { "stat_name": "Price", "stat_value": 76000 },
       { "stat_name": "HP", "stat_value": 500 }
     ],
     "ship_weapons": [
@@ -281,6 +281,38 @@
       { "defense_name": "Armor", "stat_value": 80 },
       { "defense_name": "Evasive Maneuvers", "stat_value": 60 },
       { "defense_name": "Shield", "stat_value": 40 }
+    ]
+  },{
+    "ship_name": "SUPER BATTLE SHIP",
+    "ship_type": "Battleship",
+    "ship_image": "https://i.ibb.co/37v70YF/an-icon-of-a-super-big-battleship-that-is-full-of-machine-guns-torpedos-catapults-and-a-barrier-s.png",
+    "ship_description": "This battleship is the best there could be, it's covered completely from the metal which is the hardest to penentrate through, specially customized by the developer of this bot, Armaan",
+    "ship_stats": [
+      { "stat_name": "Speed", "stat_value": 1000 },
+      { "stat_name": "Crew", "stat_value": 5000 },
+      { "stat_name": "Firepower", "stat_value": 10000 },
+      { "stat_name": "Length", "stat_value": 1000 },
+      { "stat_name": "Price", "stat_value": 89000000000000000 },
+      { "stat_name": "HP", "stat_value": 50000000000 }
+    ],
+    "ship_weapons": [
+      { "weapon_name": "14-inch Guns", "stat_value": 5000 },
+      { "weapon_name": "Torpedoes", "stat_value": 5000 },
+      {"weapon_name": "Machine Gun","stat_value": 20000},
+      {"weapon_name": "ICBM Launcher", "stat_value": 100000}
+    ],
+    "ship_modules": [
+      { "module_name": "Main Battery", "stat_value": 6000 },
+      { "module_name": "Radar", "stat_value": 4000 },
+      { "module_name": "Nuclear Radar", "stat_value": 8000 },
+      { "module_name": "Advanced Targeting System", "stat_value": 10000 }
+      
+    ],
+    "ship_defense_skills": [
+      { "defense_name": "SUPER Armor", "stat_value": 800000 },
+      { "defense_name": "Evasive Maneuvers", "stat_value": 60000 },
+      { "defense_name": "Shield", "stat_value": 400000 },
+      {"defense_name": "High Seas Flag", "stat_value": 100000000000000}
     ]
   }
     

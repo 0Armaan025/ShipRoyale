@@ -1,9 +1,14 @@
 {
     "armaan025": {
-        "balance": 30000,
+        "balance": 58555,
+        "selected_ship": "SUPER BATTLE SHIP",
         "ships": [
-            "Queen Mary 2"
+            "Queen Mary 2",
+            "SUPER BATTLE SHIP",
+            "Queen Mary",
+            "USS Constitution"
         ],
-        "selected_ship": "Queen Mary 2"
+        
+        "wins": 2
     }
 }
