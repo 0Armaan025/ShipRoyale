@@ -1,0 +1,291 @@
+
+[
+{
+    "ship_name": "Titanic",
+    "ship_type": "Passenger",
+    "ship_image": "ships/titanic.jpg",
+    "ship_description": "The Titanic was a British passenger liner operated by the White Star Line that sank in the North Atlantic Ocean in the early morning hours of 15 April 1912, after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making the sinking at the time one of the deadliest of a single ship and the deadliest peacetime sinking of a superliner or cruise ship to date. With much public attention in the aftermath, the disaster has since been the material of many artistic works and a founding material of the disaster film genre.",
+    "ship_stats":[
+        {
+            "stat_name": "Speed",
+            "stat_value": 20
+        },
+        {
+            "stat_name": "Crew",
+            "stat_value": 900
+        },
+        {
+            "stat_name": "Passenger",
+            "stat_value": 2000
+        },
+        {
+            "stat_name": "Capacity",
+            "stat_value": 2900
+        },
+        {"stat_name": "length", "stat_value": 200},
+        {
+            "stat_name": "Price",
+            "stat_value": 9999
+        },
+        {
+            "stat_name": "HP",
+            "stat_value": 100
+        }
+    ],
+    "ship_weapons":[
+        {
+            "weapon_name": "Cannon",
+            "stat_value": 10
+        },
+        {
+            "weapon_name": "Torpedo",
+            "stat_value": 20
+        }
+    ],
+    "ship_modules":[
+        {
+            "module_name": "Engine",
+            "stat_value": 10
+        },
+        {
+            "module_name": "Radar",
+            "stat_value": 20
+        }
+    ],
+    
+    "ship_defense_skills": [
+        {
+            "defense_name": "Armor",
+            "stat_value": 10
+        },
+        {
+            "defense_name": "Barrier",
+            "stat_value": 50
+        },
+        {
+            "defense_name": "Shield",
+            "stat_value": 20
+        }
+    ]
+},
+{
+    "ship_name": "HMS Victory",
+    "ship_type": "Warship",
+    "ship_image": "ships/hms_victory.jpg",
+    "ship_description": "HMS Victory is a 104-gun first-rate ship of the line of the Royal Navy, launched in 1765 and best known as Lord Nelson's flagship at the Battle of Trafalgar in 1805.",
+    "ship_stats": [
+        {"stat_name": "Speed", "stat_value": 10},
+        {"stat_name": "Crew", "stat_value": 820},
+        {"stat_name": "Passenger", "stat_value": 0},
+        {"stat_name": "Capacity", "stat_value": 800},
+        {"stat_name": "Price", "stat_value": 5000},
+        {"stat_name": "length", "stat_value": 200},
+        {"stat_name": "HP", "stat_value": 120}
+    ],
+    "ship_weapons": [
+        {"weapon_name": "Cannons", "stat_value": 15},
+        {"weapon_name": "Broadside", "stat_value": 25}
+    ],
+    "ship_modules": [
+        {"module_name": "Sails", "stat_value": 15},
+        {"module_name": "Reinforced Hull", "stat_value": 25}
+    ],
+    "ship_defense_skills": [
+        {"defense_name": "Wooden Armor", "stat_value": 30},
+        {"defense_name": "Grappling Hooks", "stat_value": 10}
+    ]
+}
+,{
+    "ship_name": "USS Constitution",
+    "ship_type": "Frigate",
+    "ship_image": "ships/uss_constitution.jpeg",
+    "ship_description": "USS Constitution is a wooden-hulled, three-masted heavy frigate of the United States Navy. Launched in 1797, she is the world's oldest ship still afloat and is known for her role in the War of 1812 against Britain.",
+    "ship_stats": [
+        {"stat_name": "Speed", "stat_value": 13},
+        {"stat_name": "Crew", "stat_value": 450},
+        {"stat_name": "Passenger", "stat_value": 0},
+        {"stat_name": "Capacity", "stat_value": 500},
+        {"stat_name": "Price", "stat_value": 7000},
+        {"stat_name": "HP", "stat_value": 130}
+    ],
+    "ship_weapons": [
+        {"weapon_name": "Cannons", "stat_value": 20},
+        {"weapon_name": "Chain Shot", "stat_value": 18}
+    ],
+    "ship_modules": [
+        {"module_name": "Sturdy Hull", "stat_value": 30},
+        {"module_name": "Improved Sails", "stat_value": 15}
+    ],
+    "ship_defense_skills": [
+        {"defense_name": "Copper Sheathing", "stat_value": 20},
+        {"defense_name": "Reinforced Hull", "stat_value": 40}
+    ]
+}
+,
+{
+    "ship_name": "Bismarck",
+    "ship_type": "Battleship",
+    "ship_image": "ships/bismarck.jpeg",
+    "ship_description": "The Bismarck was a German battleship of World War II, famous for sinking HMS Hood in a dramatic sea battle and then being relentlessly hunted by the British Navy until its sinking.",
+    "ship_stats": [
+        {"stat_name": "Speed", "stat_value": 30},
+        {"stat_name": "Crew", "stat_value": 2200},
+        {"stat_name": "length", "stat_value": 200},
+        {"stat_name": "Passenger", "stat_value": 0},
+        {"stat_name": "Capacity", "stat_value": 2500},
+        {"stat_name": "Price", "stat_value": 15000},
+        {"stat_name": "HP", "stat_value": 300}
+    ],
+    "ship_weapons": [
+        {"weapon_name": "Main Guns", "stat_value": 40},
+        {"weapon_name": "Anti-Aircraft Guns", "stat_value": 15}
+    ],
+    "ship_modules": [
+        {"module_name": "Advanced Radar", "stat_value": 30},
+        {"module_name": "Reinforced Armor", "stat_value": 35}
+    ],
+    "ship_defense_skills": [
+        {"defense_name": "Steel Armor", "stat_value": 60},
+        {"defense_name": "Water-tight Compartments", "stat_value": 50}
+    ]
+}
+,{
+    "ship_name": "Queen Mary",
+    "ship_type": "Passenger Liner",
+    "ship_image": "ships/queen_mary.jpeg",
+    "ship_description": "The Queen Mary was a British ocean liner known for its speed and luxury during the 1930s, and later as a troopship in WWII, gaining the nickname 'The Grey Ghost.'",
+    "ship_stats": [
+        {"stat_name": "Speed", "stat_value": 32},
+        {"stat_name": "Crew", "stat_value": 1100},
+        {"stat_name": "Passenger", "stat_value": 2000},
+        {"stat_name": "Capacity", "stat_value": 3100},
+        {"stat_name": "Price", "stat_value": 12000},
+        {"stat_name": "length", "stat_value": 200},
+        {"stat_name": "HP", "stat_value": 200}
+    ],
+    "ship_weapons": [
+        {"weapon_name": "Deck Cannons", "stat_value": 10}
+    ],
+    "ship_modules": [
+        {"module_name": "Luxury Amenities", "stat_value": 20},
+        {"module_name": "High-Speed Propellers", "stat_value": 40}
+    ],
+    "ship_defense_skills": [
+        {"defense_name": "Double Hull", "stat_value": 30},
+        {"defense_name": "Emergency Bulkheads", "stat_value": 20}
+    ]
+},
+{
+    "ship_name": "USS Enterprise (CVN-65)",
+    "ship_type": "Aircraft Carrier",
+    "ship_image": "ships/uss_enterprise-cvn-65.jpeg",
+    "ship_description": "The USS Enterprise (CVN-65) was the world's first nuclear-powered aircraft carrier, commissioned in 1961. It served for over 50 years, participating in numerous military operations including the Vietnam War and the Gulf War, before being decommissioned in 2012. Known for its massive size and impressive air power, it is often referred to as one of the most powerful ships ever built.",
+    "ship_stats": [
+      { "stat_name": "Speed", "stat_value": 30 },
+      { "stat_name": "Crew", "stat_value": 4500 },
+      { "stat_name": "Aircraft Capacity", "stat_value": 90 },
+      { "stat_name": "Length", "stat_value": 342 },
+      { "stat_name": "Price", "stat_value": 45000 },
+      { "stat_name": "HP", "stat_value": 1000 }
+    ],
+    "ship_weapons": [
+      { "weapon_name": "Phalanx CIWS", "stat_value": 50 },
+      { "weapon_name": "Harpoon Missiles", "stat_value": 80 }
+    ],
+    "ship_modules": [
+      { "module_name": "Nuclear Reactor", "stat_value": 50 },
+      { "module_name": "Advanced Radar", "stat_value": 40 }
+    ],
+    "ship_defense_skills": [
+      { "defense_name": "Armor", "stat_value": 100 },
+      { "defense_name": "Shield", "stat_value": 80 },
+      { "defense_name": "Barrier", "stat_value": 60 }
+    ]
+  },
+  {
+    "ship_name": "Queen Mary 2",
+    "ship_type": "Ocean Liner",
+    "ship_image": "ships/queen_mary_2.jpg",
+    "ship_description": "Queen Mary 2 is a Cunard Line ocean liner that represents the pinnacle of luxury cruise travel. Built to cross the Atlantic Ocean, it combines speed, comfort, and opulence, making it one of the most famous ocean liners in the world.",
+    "ship_stats": [
+      { "stat_name": "Speed", "stat_value": 30 },
+      { "stat_name": "Crew", "stat_value": 1300 },
+      { "stat_name": "Passenger", "stat_value": 2600 },
+      { "stat_name": "Length", "stat_value": 345 },
+      { "stat_name": "Price", "stat_value": 80000 },
+      { "stat_name": "HP", "stat_value": 500 }
+    ],
+    "ship_weapons": [
+      { "weapon_name": "Luxury Cannons", "stat_value": 10 },
+      { "weapon_name": "Torpedo", "stat_value": 15 }
+    ],
+    "ship_modules": [
+      { "module_name": "Luxury Suites", "stat_value": 80 },
+      { "module_name": "Advanced Radar", "stat_value": 50 }
+    ],
+    "ship_defense_skills": [
+      { "defense_name": "Armor", "stat_value": 30 },
+      { "defense_name": "Evasive Maneuvers", "stat_value": 70 },
+      { "defense_name": "Shield", "stat_value": 50 }
+    ]
+  }
+,{
+    "ship_name": "USS Missouri (BB-63)",
+    "ship_type": "Battleship",
+    "ship_image": "ships/uss-missouri-bb-63.jpeg",
+    "ship_description": "The USS Missouri (BB-63) was a U.S. Navy battleship famous for being the site of the Japanese surrender that ended World War II. It saw action in the Pacific and later served during the Korean War, Vietnam War, and Operation Desert Storm.",
+    "ship_stats": [
+      { "stat_name": "Speed", "stat_value": 28 },
+      { "stat_name": "Crew", "stat_value": 2700 },
+      { "stat_name": "Firepower", "stat_value": 150 },
+      { "stat_name": "Length", "stat_value": 270 },
+      { "stat_name": "Price", "stat_value": 40000 },
+      { "stat_name": "HP", "stat_value": 1100 }
+    ],
+    "ship_weapons": [
+      { "weapon_name": "16-inch Guns", "stat_value": 120 },
+      { "weapon_name": "Tomahawk Missiles", "stat_value": 100 }
+    ],
+    "ship_modules": [
+      { "module_name": "Nuclear Reactor", "stat_value": 30 },
+      { "module_name": "Advanced Targeting System", "stat_value": 50 }
+    ],
+    "ship_defense_skills": [
+      { "defense_name": "Armor", "stat_value": 90 },
+      { "defense_name": "Torpedo Defense", "stat_value": 80 },
+      { "defense_name": "Shield", "stat_value": 60 }
+    ]
+  },
+  {
+    "ship_name": "USS Arizona (BB-39)",
+    "ship_type": "Battleship",
+    "ship_image": "ships/uss-arizona.jpeg",
+    "ship_description": "The USS Arizona was a U.S. Navy battleship that was famously sunk during the attack on Pearl Harbor in December 1941. The ship is now a memorial, honoring those who lost their lives in the attack.",
+    "ship_stats": [
+      { "stat_name": "Speed", "stat_value": 21 },
+      { "stat_name": "Crew", "stat_value": 1500 },
+      { "stat_name": "Firepower", "stat_value": 140 },
+      { "stat_name": "Length", "stat_value": 208 },
+      { "stat_name": "Price", "stat_value": 20000 },
+      { "stat_name": "HP", "stat_value": 500 }
+    ],
+    "ship_weapons": [
+      { "weapon_name": "14-inch Guns", "stat_value": 70 },
+      { "weapon_name": "Torpedoes", "stat_value": 50 }
+    ],
+    "ship_modules": [
+      { "module_name": "Main Battery", "stat_value": 60 },
+      { "module_name": "Radar", "stat_value": 40 }
+    ],
+    "ship_defense_skills": [
+      { "defense_name": "Armor", "stat_value": 80 },
+      { "defense_name": "Evasive Maneuvers", "stat_value": 60 },
+      { "defense_name": "Shield", "stat_value": 40 }
+    ]
+  }
+    
+    
+  
+
+
+]
