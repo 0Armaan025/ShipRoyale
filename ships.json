@@ -3,7 +3,7 @@
 {
     "ship_name": "Titanic",
     "ship_type": "Passenger",
-    "ship_image": "ships/titanic.jpg",
+    "ship_image": "https://i.ibb.co/80kvqTR/titanic.jpg",
     "ship_description": "The Titanic was a British passenger liner operated by the White Star Line that sank in the North Atlantic Ocean in the early morning hours of 15 April 1912, after striking an iceberg during her maiden voyage from Southampton to New York City. Of the estimated 2,224 passengers and crew aboard, more than 1,500 died, making the sinking at the time one of the deadliest of a single ship and the deadliest peacetime sinking of a superliner or cruise ship to date. With much public attention in the aftermath, the disaster has since been the material of many artistic works and a founding material of the disaster film genre.",
     "ship_stats":[
         {
@@ -71,7 +71,7 @@
 {
     "ship_name": "HMS Victory",
     "ship_type": "Warship",
-    "ship_image": "ships/hms_victory.jpg",
+    "ship_image": "https://i.ibb.co/jhQ6YTM/HMS-Victory-1-scaled.jpg",
     "ship_description": "HMS Victory is a 104-gun first-rate ship of the line of the Royal Navy, launched in 1765 and best known as Lord Nelson's flagship at the Battle of Trafalgar in 1805.",
     "ship_stats": [
         {"stat_name": "Speed", "stat_value": 10},
@@ -98,7 +98,7 @@
 ,{
     "ship_name": "USS Constitution",
     "ship_type": "Frigate",
-    "ship_image": "ships/uss_constitution.jpeg",
+    "ship_image": "https://i.ibb.co/31t1Yyb/uss-constitution.jpg",
     "ship_description": "USS Constitution is a wooden-hulled, three-masted heavy frigate of the United States Navy. Launched in 1797, she is the world's oldest ship still afloat and is known for her role in the War of 1812 against Britain.",
     "ship_stats": [
         {"stat_name": "Speed", "stat_value": 13},
@@ -125,7 +125,7 @@
 {
     "ship_name": "Bismarck",
     "ship_type": "Battleship",
-    "ship_image": "ships/bismarck.jpeg",
+    "ship_image": "https://i.ibb.co/xg9wTF6/bismarck.jpg",
     "ship_description": "The Bismarck was a German battleship of World War II, famous for sinking HMS Hood in a dramatic sea battle and then being relentlessly hunted by the British Navy until its sinking.",
     "ship_stats": [
         {"stat_name": "Speed", "stat_value": 30},
@@ -152,7 +152,7 @@
 ,{
     "ship_name": "Queen Mary",
     "ship_type": "Passenger Liner",
-    "ship_image": "ships/queen_mary.jpeg",
+    "ship_image": "https://i.ibb.co/RCsF6qM/queen-mary.jpg",
     "ship_description": "The Queen Mary was a British ocean liner known for its speed and luxury during the 1930s, and later as a troopship in WWII, gaining the nickname 'The Grey Ghost.'",
     "ship_stats": [
         {"stat_name": "Speed", "stat_value": 32},
@@ -178,7 +178,7 @@
 {
     "ship_name": "USS Enterprise (CVN-65)",
     "ship_type": "Aircraft Carrier",
-    "ship_image": "ships/uss_enterprise-cvn-65.jpeg",
+    "ship_image": "https://i.ibb.co/3TS8yv0/uss-enterprise-cvn-65.jpg",
     "ship_description": "The USS Enterprise (CVN-65) was the world's first nuclear-powered aircraft carrier, commissioned in 1961. It served for over 50 years, participating in numerous military operations including the Vietnam War and the Gulf War, before being decommissioned in 2012. Known for its massive size and impressive air power, it is often referred to as one of the most powerful ships ever built.",
     "ship_stats": [
       { "stat_name": "Speed", "stat_value": 30 },
@@ -205,7 +205,7 @@
   {
     "ship_name": "Queen Mary 2",
     "ship_type": "Ocean Liner",
-    "ship_image": "ships/queen_mary_2.jpg",
+    "ship_image": "https://i.ibb.co/7N3S22y/queen-mary-2.jpg",
     "ship_description": "Queen Mary 2 is a Cunard Line ocean liner that represents the pinnacle of luxury cruise travel. Built to cross the Atlantic Ocean, it combines speed, comfort, and opulence, making it one of the most famous ocean liners in the world.",
     "ship_stats": [
       { "stat_name": "Speed", "stat_value": 30 },
@@ -232,7 +232,7 @@
 ,{
     "ship_name": "USS Missouri (BB-63)",
     "ship_type": "Battleship",
-    "ship_image": "ships/uss-missouri-bb-63.jpeg",
+    "ship_image": "https://i.ibb.co/3C8vYL4/uss-missouri-bb-63.jpg",
     "ship_description": "The USS Missouri (BB-63) was a U.S. Navy battleship famous for being the site of the Japanese surrender that ended World War II. It saw action in the Pacific and later served during the Korean War, Vietnam War, and Operation Desert Storm.",
     "ship_stats": [
       { "stat_name": "Speed", "stat_value": 28 },
@@ -259,7 +259,7 @@
   {
     "ship_name": "USS Arizona (BB-39)",
     "ship_type": "Battleship",
-    "ship_image": "ships/uss-arizona.jpeg",
+    "ship_image": "https://i.ibb.co/CmypQFR/uss-arizona.jpg",
     "ship_description": "The USS Arizona was a U.S. Navy battleship that was famously sunk during the attack on Pearl Harbor in December 1941. The ship is now a memorial, honoring those who lost their lives in the attack.",
     "ship_stats": [
       { "stat_name": "Speed", "stat_value": 21 },

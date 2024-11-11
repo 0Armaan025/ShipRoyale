@@ -59,45 +59,41 @@ def load_users():
             return json.load(file)
     return {}
 
-def save_users(users):
-    with open('users.json', 'w') as file:
-        json.dump(users, file, indent=4)
-
 @bot.command()
-async def start(ctx):
-    username = str(ctx.author.name)
+async def shop(ctx):
+    user_id = str(ctx.author.name)
+
     users = load_users()
 
-    if username in users:
-        await ctx.send("You are already registered! Use `$info <ship_name>` to get more information on available ships.")
-    else:
-        users[username] = {"balance": 30000, "ships": [], "selected_ship": None}
-        save_users(users)
-        await ctx.send("Welcome back, traveller! You have been registered and awarded 30000 in shipoons currency.")
-        await ctx.send("Available ships to start your journey: Titanic, USS Constitution, Queen Mary, USS Enterprise (CVN-65), Queen Mary 2.")
-        await ctx.send("Use `$select <ship_name>` to choose your starting ship.")
-
-@bot.command()
-async def select(ctx, *, ship_name: str):
-    initial_ships = ["Titanic", "USS Constitution", "Queen Mary", "USS Enterprise (CVN-65)", "Queen Mary 2"]
-    username = str(ctx.author.name)
-    users = load_users()
-
-    if username not in users:
+    if user_id not in users:
         await ctx.send("You need to register first. Use `$start` to get started.")
         return
+    
+    with open("ships.json", "r") as f:
+        all_ships = json.load(f)
 
-    if users[username]["selected_ship"]:
-        await ctx.send("You have already selected a ship. This choice is final.")
-        return
+    user_ships = users[user_id].get("ships",[])
 
-    if ship_name in initial_ships:
-        users[username]["selected_ship"] = ship_name
-        users[username]["ships"].append(ship_name)
-        save_users(users)
-        await ctx.send(f"Congratulations! You have selected {ship_name} as your ship.")
+    available_ships = [ship for ship in all_ships if ship['ship_name'] not in user_ships]
+
+    if available_ships:
+        embed = discord.Embed(title="Ship Shop", description="Here are the ships available for purchase:", color=discord.Color.green())
+        
+        for ship in available_ships:
+            embed.add_field(name=ship["ship_name"] , value=(
+                    f"Type: {ship['ship_type']}\n"
+                    f"Price: {next(stat['stat_value'] for stat in ship['ship_stats'] if stat['stat_name'] == 'Price')}\n"
+                    f"Description: {ship['ship_description'][:100]}..."  # Shorten description
+                ), inline=False)
+        
+        # Set the image URL outside of the loop
+        embed.set_image(url=f"{available_ships[0]['ship_image']}")
+
+        await ctx.send(embed=embed)
     else:
-        await ctx.send("Please choose from the available ships. Use `$start` to view them again.")
+        await ctx.send("You own all the ships already!")    
+
+    await ctx.send("Welcome traveller to the shop! The ships you have will not appear on the list to buy!")
 
 async def spawn_ship(channel_id: int):
     print(f"Spawning ship in channel {channel_id}")  
@@ -107,40 +103,57 @@ async def spawn_ship(channel_id: int):
 
     random_ship = random.choice(ships)
 
-
-
+    
     embed = discord.Embed(
         title="Ship Details", 
         color=discord.Color.purple(),
         description=f"{random_ship.get('ship_description', 'No description available')}"
     )
 
+    
     def format_field(field_data):
         if not field_data:
             return "No data available"
-        return "\n".join(f"{item.get('name', item.get('stat_name', item.get('module_name', item.get('defense_name', item.get('weapon_name', 'Unknown')))))}: {item.get('value', item.get('stat_value', 'N/A'))}" for item in field_data)
 
+        formatted_data = []
+        for item in field_data:
+            name = item.get('name', item.get('stat_name', item.get('module_name', item.get('defense_name', item.get('weapon_name', 'Unknown')))))
+            value = item.get('value', item.get('stat_value', 'N/A'))
+            formatted_data.append(f"{name}: {value}")
+        return "\n".join(formatted_data)
+
+    
+    stats_str = format_field(random_ship.get('ship_stats', []))
+    weapons_str = format_field(random_ship.get('ship_weapons', []))
+    modules_str = format_field(random_ship.get('ship_modules', []))
+    defense_str = format_field(random_ship.get('ship_defense_skills', []))
+    
     embed.add_field(name="Name", value=random_ship.get("ship_name", "Unknown"), inline=False)
     embed.add_field(name="Type", value=random_ship.get("ship_type", "Unknown"), inline=False)
-    embed.add_field(name="Stats", value=format_field(random_ship.get('ship_stats', [])), inline=False)
-    embed.add_field(name="Weapons", value=format_field(random_ship.get('ship_weapons', [])), inline=False)
-    embed.add_field(name="Modules", value=format_field(random_ship.get('ship_modules', [])), inline=False)
-    embed.add_field(name="Defense Skills", value=format_field(random_ship.get('ship_defense_skills', [])), inline=False)
-
+    embed.add_field(name="Stats", value=stats_str, inline=False)
+    embed.add_field(name="Weapons", value=weapons_str, inline=False)
+    embed.add_field(name="Modules", value=modules_str, inline=False)
+    embed.add_field(name="Defense skills", value=defense_str, inline=False)
+    embed.add_image(url=f"{random_ship['ship_image']}")
+    
     file_path = f"ship_images/{random_ship.get('ship_image', '')}"
 
-    channel = bot.get_channel(channel_id)
-    if channel:
-        if os.path.exists(file_path):
-            file = discord.File(file_path, filename=random_ship['ship_image'])
-            await channel.send(file=file, embed=embed)
+    if os.path.exists(file_path):
+        # file = discord.File(file_path, filename=random_ship['ship_image'])
+        channel = bot.get_channel(channel_id)
+        if channel:
+            await channel.send( embed=embed)
         else:
-            await channel.send(embed=embed)
+            print(f"Channel with ID {channel_id} not found.")
     else:
-        print(f"Channel with ID {channel_id} not found.")
+        channel = bot.get_channel(channel_id)
+        if channel:
+            await channel.send(embed=embed)
+        else:
+            print(f"Channel with ID {channel_id} not found.")
 
 @bot.command()
-async def catch(ctx):
+async def conquer(ctx):
     username = str(ctx.author.name)
     users = load_users()
 
