@@ -134,7 +134,7 @@ async def spawn_ship(channel_id: int):
     embed.add_field(name="Weapons", value=weapons_str, inline=False)
     embed.add_field(name="Modules", value=modules_str, inline=False)
     embed.add_field(name="Defense skills", value=defense_str, inline=False)
-    embed.add_image(url=f"{random_ship['ship_image']}")
+    embed.set_image(url=f"{random_ship['ship_image']}")
     
     file_path = f"ship_images/{random_ship.get('ship_image', '')}"
 
@@ -241,11 +241,13 @@ async def info(ctx, *, ship_name=None):
             embed.add_field(name="Weapons", value=format_field(ship.get("ship_weapons", [])), inline=False)
             embed.add_field(name="Modules", value=format_field(ship.get("ship_modules", [])), inline=False)
             embed.add_field(name="Defense Skills", value=format_field(ship.get("ship_defense_skills", [])), inline=False)
+            embed.set_image(url=f"{ship['ship_image']}")
+    
 
             file_path = f"ship_images/{ship.get('ship_image', '')}"
             if os.path.exists(file_path):
-                file = discord.File(file_path, filename=ship['ship_image'])
-                await ctx.send(file=file, embed=embed)
+                # file = discord.File(file_path, filename=ship['ship_image'])
+                await ctx.send( embed=embed)
             else:
                 await ctx.send(embed=embed)
             break
